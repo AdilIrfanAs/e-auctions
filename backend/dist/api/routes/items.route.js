@@ -1,0 +1,11 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var express_1 = require("express");
+var items_controller_1 = require("../controllers/items.controller");
+var authRouter = (0, express_1.Router)();
+authRouter.route("/").post(items_controller_1.create);
+authRouter.route("/:id").put(items_controller_1.update);
+authRouter.route("/").get(items_controller_1.list);
+authRouter.route("/drafts/:userId").get(items_controller_1.drafts);
+authRouter.route("/:id").get(items_controller_1.get);
+exports.default = authRouter;

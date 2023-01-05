@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+body{font-family: 'Open Sans', sans-serif;}
+h1,h2,h3,h4{font-weight:700;}
+a{text-decoration: none;}
+.btn{min-width:80px;}
+section{padding:80px 0;}
+.wrapper-inner{z-index:1;}
+.auth-form{width:400px;margin:0 auto;border:1px solid #dedede;padding:30px 20px;border-radius: 10px;box-shadow:0 0 19px rgba(0,0,0,0.1);}
+.home-link{color:#000;font-weight:bold;font-size:20px;}
+.create-item-form{max-width: 1024px;margin: 0 auto;}
+.form-control{height:45px;}
+.item-detail-holder{border:1px solid #dedede;border-radius:10px;padding:20px;}
+.item-holder{border:1px solid #dedede;border-radius:10px;padding: 20px;color:#000;transition: all ease-in-out 0.3s;;}
+.item-holder:hover{box-shadow:0 0 20px rgba(0,0,0,0.3);color:#000;}
+.item-holder .item-name a{color:#000;}
+.item-holder .item-name a:hover{color:#000;}
+#header{padding:20px 0;border-bottom:1px solid #dedede;}
+.app-form label{font-weight: bold;}
+.posted-bids-list{max-width:50%;background:#ebebff;border-radius:7px;padding:20px;}
+.posted-bids-list li{padding:15px 0;border-bottom:1px dashed #aaaacc;}
+.posted-bids-list li:last-child{border:none;}
+.no-data-found{height:150px;border:1px dashed #ebebff;border-radius:7px;background: #ebebff; font-weight: bold;}
+.time-holder{border:1px solid #0d6efd;border-radius:4px;padding:10px;color:#0d6efd;}
+@media (max-width:1199px){
+	.posted-bids-list li{width:33.333%;}
+}
+@media (max-width:991px){
+	.posted-bids-list li{width:50%;}
+}
+@media (max-width:767px){
+	.posted-bids-list li{width:100%;}
+}
+@media (max-width:575px){
+	.auth-form{width:100%}
+	#header .btn{min-width: 45px;}
+}
